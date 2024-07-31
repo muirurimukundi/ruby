@@ -42,6 +42,9 @@ viti.numOfChairs
 
 class Customer
 
+  # class variable
+  @@no_of_customers = 0
+
   def initialize(id, name, address)
     @identifier = id
     @names = name 
@@ -51,9 +54,15 @@ class Customer
   def display_details
     puts "So you are #{@names} with ID: #{@identifier} from #{@location}"
   end
+
+  def total_no_of_customers
+    @@no_of_customers++
+    puts "And the total number of customers is #{@@no_of_customers}"
+  end 
+
 end 
 
 kwanza = Customer.new(1, "Sadiki", "Kwale")
 kwanza.display_details
-
+kwanza.total_no_of_customers
 
