@@ -56,7 +56,7 @@ class Customer
   end
 
   def total_no_of_customers
-    @@no_of_customers++
+    @@no_of_customers += 1
     puts "And the total number of customers is #{@@no_of_customers}"
   end 
 
