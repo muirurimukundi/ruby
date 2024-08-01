@@ -29,3 +29,5 @@ print x
 w = "a".."Z" # assign a range from of strings from a - z, 
 z = w.to_a # convert that string to an array 
 print z
+print z.join(" ")
+print z.join("+")
